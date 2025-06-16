@@ -156,4 +156,4 @@ Jika mengalami kendala saat menjalankan project ini, Anda bisa membuka issue di 
 Jangan lupa eksplorasi Laravel lebih lanjut di:
 🔗 [https://laravel.com/docs/](https://laravel.com/docs/)
 
-```
+
