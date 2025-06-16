@@ -32,20 +32,17 @@ Pastikan Anda telah menginstal hal berikut sebelum melanjutkan:
 
 Ikuti langkah-langkah ini secara urut.
 
-#1. Clone Project dari GitHub
+1. Clone Project dari GitHub
 
 Buka terminal atau CMD dan jalankan:
 
 ```bash
-git clone https://github.com/nama-user/nama-repo.git
-cd nama-repo
+git clone https://github.com/ilhammtg/forward-chaining.git
+cd forward-chaining
 ````
 
-> Ganti `nama-user/nama-repo` sesuai nama GitHub project Anda.
 
----
-
-#2. Install Library Laravel dengan Composer
+2. Install Library Laravel dengan Composer
 
 Di dalam folder project, jalankan:
 
@@ -57,7 +54,7 @@ composer install
 
 ---
 
-#3. Buat File `.env`
+3. Buat File `.env`
 
 File `.env` menyimpan konfigurasi seperti koneksi database. Karena file ini tidak ada di GitHub (diblokir oleh `.gitignore`), Anda harus membuatnya secara manual dari contoh file:
 
@@ -67,7 +64,7 @@ cp .env.example .env
 
 ---
 
-#4. Generate Laravel App Key
+4. Generate Laravel App Key
 
 Laravel butuh app key untuk enkripsi data. Jalankan:
 
@@ -77,7 +74,7 @@ php artisan key:generate
 
 ---
 
-#5. Konfigurasi Database
+5. Konfigurasi Database
 
 Buka file `.env` dengan text editor, lalu ubah bagian berikut sesuai pengaturan database lokal Anda:
 
@@ -94,7 +91,7 @@ DB_PASSWORD=
 
 ---
 
-#6. Buat dan Isi Database
+6. Buat dan Isi Database
 
 Setelah membuat database MySQL, jalankan perintah ini untuk membuat tabel dan mengisi data awal (jika seeder tersedia):
 
@@ -106,7 +103,7 @@ php artisan migrate --seed
 
 ---
 
-#7. Jalankan Server Laravel
+7. Jalankan Server Laravel
 
 Laravel memiliki built-in web server. Anda bisa langsung menjalankan:
 
@@ -146,16 +143,6 @@ A: Pastikan MySQL aktif dan setting di `.env` sudah benar (`DB_USERNAME`, `DB_PA
 **Q: Tidak ada file `.env` setelah clone?**
 A: File `.env` tidak diupload ke GitHub. Gunakan `cp .env.example .env`.
 
----
-
-📝 Tentang Project
-
-* Framework: Laravel 12
-* Database: MySQL
-* Terdapat: Migration dan Seeder
-* Dibuat untuk: Digunakan dan dijalankan secara lokal
-
----
 
 📬 Kontak
 
@@ -169,15 +156,4 @@ Jika mengalami kendala saat menjalankan project ini, Anda bisa membuka issue di 
 Jangan lupa eksplorasi Laravel lebih lanjut di:
 🔗 [https://laravel.com/docs/](https://laravel.com/docs/)
 
-```
 
----
-
-Kalau kamu mau saya tambahkan bagian seperti:
-
-- Fitur-fitur aplikasi
-- Panduan login (jika ada user default dari seeder)
-- Penjelasan struktur folder Laravel untuk pemula
-
-Tinggal bilang aja ya!
-```
