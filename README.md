@@ -157,6 +157,3 @@ Jangan lupa eksplorasi Laravel lebih lanjut di:
 🔗 [https://laravel.com/docs/](https://laravel.com/docs/)
 
 ```
-
-
-```
