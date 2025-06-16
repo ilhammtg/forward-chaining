@@ -32,7 +32,7 @@ Pastikan Anda telah menginstal hal berikut sebelum melanjutkan:
 
 Ikuti langkah-langkah ini secara urut.
 
-#1. Clone Project dari GitHub
+1. Clone Project dari GitHub
 
 Buka terminal atau CMD dan jalankan:
 
@@ -42,7 +42,7 @@ cd forward-chaining
 ````
 
 
-#2. Install Library Laravel dengan Composer
+2. Install Library Laravel dengan Composer
 
 Di dalam folder project, jalankan:
 
@@ -54,7 +54,7 @@ composer install
 
 ---
 
-#3. Buat File `.env`
+3. Buat File `.env`
 
 File `.env` menyimpan konfigurasi seperti koneksi database. Karena file ini tidak ada di GitHub (diblokir oleh `.gitignore`), Anda harus membuatnya secara manual dari contoh file:
 
@@ -64,7 +64,7 @@ cp .env.example .env
 
 ---
 
-#4. Generate Laravel App Key
+4. Generate Laravel App Key
 
 Laravel butuh app key untuk enkripsi data. Jalankan:
 
