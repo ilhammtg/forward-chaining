@@ -26,7 +26,6 @@ class DiagnosaController extends Controller
         foreach ($rules as $rule) {
             $ruleGejala = $rule->gejalas->pluck('id')->toArray();
 
-            // ✅ Cocok jika semua gejala di rule ada dalam input user (boleh lebih banyak)
             if (empty(array_diff($ruleGejala, $selectedGejala))) {
                 $matchedRule = $rule;
                 break;
